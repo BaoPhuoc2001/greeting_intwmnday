@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mừng ngày quốc tế phụ nữ 8/3</title>
+	<style>
+		body {
+			background-color: black;
+			color: white;
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin-top: 100px;
+		}
+
+		h1 {
+			font-size: 50px;
+			margin-bottom: 50px;
+			text-shadow: 2px 2px #ff69b4;
+		}
+
+		p {
+			font-size: 24px;
+			animation: colorChange 4s infinite alternate;
+			background-image: linear-gradient(45deg, #ff69b4, #ff1493);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-background-clip: text;
+			-moz-text-fill-color: transparent;
+		}
+
+		@keyframes colorChange {
+			from {
+				color: #fff;
+			}
+			to {
+				color: #ff69b4;
+			}
+		}
+
+		.rose {
+			width: 200px;
+			height: auto;
+			margin-top: 50px;
+			border: 5px solid #ff69b4;
+			border-radius: 10px;
+			box-shadow: 5px 5px #ff1493;
+		}
+
+		.footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #111;
+			color: white;
+			text-align: center;
+			padding: 10px;
+		}
+
+		.footer a {
+			color: #ff69b4;
+			text-decoration: none;
+			border-bottom: 2px solid #ff69b4;
+		}
+
+		.footer a:hover {
+			color: #ff1493;
+			border-bottom: 2px solid #ff1493;
+		}
+	</style>
+</head>
+<body>
+	<h1>Mừng ngày quốc tế phụ nữ 8/3</h1>
+	<p id="wish">Mong Thời nhận lấy phần quà nho nhỏ này</p>
+	<img src="https://static.wikia.nocookie.net/846b2911-4350-44c4-ad04-fddd2cc8cfd6/scale-to-width-down/300" alt="rose" class="rose">
+	<div class="footer">
+		<p>from <a href="https://www.facebook.com/hoangbaophuoc.3005/">Hoàng Bảo Phước</a></p>
+	</div>
+	<script>
+		const wish = document.getElementById("wish");
+
+		setInterval(() => {
+			if (wish.style.color === "rgb(255, 105, 180)") {
+				wish.style.color = "white";
+			} else {
+				wish.style.color = "#ff69b4";
+			}
+		}, 2000);
+	</script>
+</body>
+</html>
